@@ -84,7 +84,9 @@ void Reset_Handler(void) {
     while (dst < &_end_bss)
         *dst++ = 0;
 
+#ifndef NO_SYSTEMINIT
     SystemInit();
+#endif
     main();
     while (1);
 }
