@@ -1,2 +1,2 @@
 Project to create unified/easily portable startup code and linker script
-for any ARM Cortex CPU.
+for any ARM Cortex-M CPU.
