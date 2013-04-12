@@ -1,0 +1,4 @@
+Core, MCU-independent startup.c and linkscript.ld are in Public Domain.
+
+For other files, consult each individually for licensing status (can
+be Public Domain or liberal license like BSD).
