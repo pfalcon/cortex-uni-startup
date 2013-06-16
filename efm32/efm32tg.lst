@@ -1,0 +1,30 @@
+# Energy Micro EFM32 Tiny Gecko IRQ list
+# d0034_efm32tg_reference_manual.pdf p.12
+#
+# This file is in public domain
+#
+# Put together by Paul Sokolovsky
+#
+DMA
+GPIO_EVEN
+TIMER0
+USART0_RX
+USART0_TX
+ACMP0
+ADC0
+DAC0
+I2C0
+GPIO_ODD
+TIMER1
+USART1_RX
+USART1_TX
+LESENSE
+LEUART0
+LETIMER0
+PCNT0
+RTC
+CMU
+VCMP
+LCD
+MSC
+AES
