@@ -1,0 +1,37 @@
+# Energy Micro EFM32 Gecko IRQ list
+# d0001_efm32g_reference_manual.pdf p.12
+#
+# This file is in public domain
+#
+# Put together by Paul Sokolovsky
+#
+DMA
+GPIO_EVEN
+TIMER0
+USART0_RX
+USART0_TX
+ACMP0
+ADC0
+DAC0
+I2C0
+GPIO_ODD
+TIMER1
+TIMER2
+USART1_RX
+USART1_TX
+USART2_RX
+USART2_TX
+UART0_RX
+UART0_TX
+LEUART0
+LEUART1
+LETIMER0
+PCNT0
+PCNT1
+PCNT2
+RTC
+CMU
+VCMP
+LCD
+MSC
+AES
