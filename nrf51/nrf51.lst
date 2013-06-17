@@ -1,0 +1,27 @@
+# Nordic Semi nRF51822 IRQ list
+# nRF51_Reference_manual v1.1.pdf p.12
+#
+# This file is in public domain
+#
+# Put together by Paul Sokolovsky
+#
+ 0 POWER_CLOCK
+ 1 RADIO
+ 2 UART0
+ 3 SPI0_TWI0
+ 4 SPI1_TWI1
+ 6 GPIOTE
+ 7 ADC
+ 8 TIMER0
+ 9 TIMER1
+10 TIMER2
+11 RTC0
+12 TEMP
+13 RNG
+14 ECB
+15 CCM_AAR
+16 WDT
+17 RTC1
+18 QDEC
+30 NVMC
+31 PPI
