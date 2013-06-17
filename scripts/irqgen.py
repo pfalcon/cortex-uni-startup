@@ -1,5 +1,6 @@
 #!/usr/bin/env python
 import sys
+import os
 
 
 irqs = []
@@ -18,27 +19,29 @@ for l in f:
         no += 1
     irqs.append(fields)
 
-print '#include "startup.c"'
-print
+dir, fname = os.path.split(sys.argv[1])
+fout = open(dir + "/startup-" + fname.rsplit('.', 1)[0] + ".c", "w")
+print >>fout, '#include "../startup.c"'
+print >>fout
 
 for i in irqs:
-    print 'void %s_IRQHandler(void) ALIAS("Dummy_Handler");' % i[1]
+    print >>fout, 'void %s_IRQHandler(void) ALIAS("Dummy_Handler");' % i[1]
 
 
-print
+print >>fout
 
-print 'void *vendor_vector_table[] __attribute__ ((section(".vendor_vectors"))) = {'
+print >>fout, 'void *vendor_vector_table[] __attribute__ ((section(".vendor_vectors"))) = {'
 no = 0
 for i in irqs:
     if no != i[0]:
         # Gap detected
         assert no < i[0]
         while no < i[0]:
-            print '0,'
+            print >>fout, '0,'
             no += 1
 
     assert i[0] == no
-    print '%s_IRQHandler,' % i[1]
+    print >>fout, '%s_IRQHandler,' % i[1]
     no += 1
 
-print '};'
+print >>fout, '};'
