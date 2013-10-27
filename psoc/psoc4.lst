@@ -1,0 +1,24 @@
+# Cypress PSoC4 IRQ list
+# PSoC4 Architecture_TRM_001-85634_0A.pdf p.41
+#
+# This file is in public domain
+#
+# Put together by Paul Sokolovsky
+#
+ 0 GPIOP0
+ 1 GPIOP1
+ 2 GPIOP2
+ 3 GPIOP3
+ 4 GPIOP4
+ 8 LPCOMP
+ 9 WDT
+10 SCB1
+11 SCB2
+12 SPC
+13 PWR
+14 SAR
+15 CSD
+16 TCPWM0
+17 TCPWM1
+18 TCPWM2
+19 TCPWM3
