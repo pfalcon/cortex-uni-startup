@@ -35,7 +35,7 @@ no = 0
 for i in irqs:
     if no != i[0]:
         # Gap detected
-        assert no < i[0]
+        assert no < i[0], "Interrupt numbers are not in increasing sequence"
         while no < i[0]:
             print >>fout, '0,'
             no += 1
