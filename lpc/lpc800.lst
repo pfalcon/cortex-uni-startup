@@ -1,0 +1,27 @@
+# NXP LPC800 series IRQ list
+# UM10601.pdf rev.1.2 p.11
+#
+# This file is in public domain
+#
+# Put together by Paul Sokolovsky
+#
+ 0 SPI0
+ 1 SPI1
+ 3 UART0
+ 4 UART1
+ 5 UART2
+ 8 I2C0
+ 9 SCT
+10 MRT
+11 CMP
+12 WDT
+13 BOD
+15 WKT
+24 PININT0
+25 PININT1
+26 PININT2
+27 PININT3
+28 PININT4
+29 PININT5
+30 PININT6
+31 PININT7
