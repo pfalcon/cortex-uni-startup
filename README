@@ -1,2 +1,22 @@
-Project to create unified/easily portable startup code and linker script
-for any ARM Cortex-M CPU.
+cortex-uni-startup is a project to create unified/easily portable startup
+code and linker script for any ARM Cortex-M CPUs/MCUs.
+
+Supported out of the box:
+* Basic Cortex-M CPU with standard interrupts
+* STElectronics STM32
+* Energy Micro EFM32
+* Texas Instruments Tiva-C TM4 (former Stellaris LM4)
+* NXP LPC800
+* Nordic Semi NRF51
+* Cypress PSoC4
+
+New MCU is very easy to add - just use existing code as the example!
+
+Basic usage example is provided in example/ directory. Note that as this
+project deals only with Cortex-M startup, the example does not perform any
+I/O operations like LED blinking. If you are interested in I/O and register
+mappings for any Cortex-M MCU, please visit sister project
+https://github.com/pfalcon/libperipha.
+
+For advanced usage of both cortex-uni-startup and libperipha, see
+https://github.com/pfalcon/PeripheralTemplateLibrary .
