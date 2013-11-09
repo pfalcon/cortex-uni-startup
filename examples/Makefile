@@ -9,7 +9,7 @@ CC = $(CROSS_COMPILE)gcc$(GCC_VER)
 TARGET = stm32
 # Name output dir after target. Other alternative for multi-dir projects is
 # bin-$(TARGET)
-TARGETDIR = $(TARGET)
+TARGETDIR = bin-$(TARGET)
 # Short one-character alias for TARGETDIR
 T = $(TARGETDIR)
 
