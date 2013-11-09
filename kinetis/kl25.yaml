@@ -1,0 +1,17 @@
+defaults:
+    flash:
+        addr: 0
+    sram:
+        # Vendor goes mad aka diversity: p.76
+        # "The on-chip SRAM is split into two ranges, 1/4 is allocated to SRAM_L and 3/4 is allocated to SRAM_U."
+        addr: 0x20000000 - size / 4
+
+MKL25Z32:
+    flash: {size: 32K}
+    sram: {size: 4K}
+MKL25Z64:
+    flash: {size: 64K}
+    sram: {size: 8K}
+MKL25Z128:
+    flash: {size: 128K}
+    sram: {size: 16K}

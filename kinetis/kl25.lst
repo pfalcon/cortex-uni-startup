@@ -1,0 +1,36 @@
+# Freescale KL25 series IRQ list
+# p.53
+#
+# This file is in public domain
+#
+# Put together by Paul Sokolovsky
+#
+ 0 DMA0
+ 1 DMA1
+ 2 DMA2
+ 3 DMA3
+ 5 FTFA
+ 6 PMC
+ 7 LLWU
+ 8 I2C0
+ 9 I2C1
+10 SPI0
+11 SPI1
+12 UART0
+13 UART1
+14 UART2
+15 ADC0
+16 CMP0
+17 TPM0
+18 TPM1
+19 TPM2
+20 RTC_ALARM
+21 RTC_TICK
+22 PIT
+24 USB
+25 DAC0
+26 TSI0
+27 MCG
+28 LPTMR0
+30 GPIO_A
+31 GPIO_D
