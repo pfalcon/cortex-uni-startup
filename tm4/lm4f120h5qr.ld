@@ -9,7 +9,7 @@
 
 MEMORY
 {
-    flash   :   ORIGIN = 0x00000000, LENGTH = 256M
+    flash   :   ORIGIN = 0x00000000, LENGTH = 256K
     sram    :   ORIGIN = 0x20000000, LENGTH = 32K
 }
 
