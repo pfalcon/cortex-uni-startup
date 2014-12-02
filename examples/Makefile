@@ -6,7 +6,7 @@ CROSS_COMPILE = arm-none-eabi-
 GCC_VAR =
 CC = $(CROSS_COMPILE)gcc$(GCC_VER)
 # Target subarch to build for
-TARGET = stm32
+TARGET = stm32/stm32-smallest
 # Name output dir after target. Other alternative for multi-dir projects is
 # bin-$(TARGET)
 TARGETDIR = bin-$(TARGET)
@@ -14,7 +14,7 @@ TARGETDIR = bin-$(TARGET)
 T = $(TARGETDIR)
 
 STARTUP = $(CORTEX_STARTUP)/startup.c
-LINKSCRIPT = $(TARGET)-smallest.ld
+LINKSCRIPT = $(TARGET).ld
 
 # Generic target flags which used for both compiling and linking. We compile
 # startup code at linking stage, so this may (and sometimes should) contain
