@@ -3,7 +3,7 @@
 CORTEX_STARTUP = ..
 
 CROSS_COMPILE = arm-none-eabi-
-GCC_VAR =
+GCC_VER =
 CC = $(CROSS_COMPILE)gcc$(GCC_VER)
 # Target subarch to build for
 TARGET = stm32/stm32-smallest
@@ -31,11 +31,11 @@ LDLIBS = -L$(CORTEX_STARTUP)
 
 all: $T/example-no-io
 
-# This corresponds to builtin Make rule, except puts object files to TARGETDIR
+# This corresponds to a builtin make rule, except puts object files to TARGETDIR
 $T/%.o: %.c
 	mkdir -p $T
 	$(CC) $(CPPFLAGS) $(CFLAGS) -c $^ -o $@
 
-# Add rules for a specifical applications here
+# Add rules for specific applications here
 $T/example-no-io: $T/example-no-io.o
 $T/example-no-io.o: example-no-io.c
